@@ -1,9 +1,5 @@
 model_list:
-  - model_name: claude-code-gptoss
-    litellm_params:
-      model: groq/openai/gpt-oss-20b
-      api_key: os.environ/GROQ_API_KEY
-
+  # === Claude Code model name mappings (change target model here) ===
   - model_name: claude-sonnet-4-6
     litellm_params:
       model: groq/openai/gpt-oss-20b
@@ -17,6 +13,79 @@ model_list:
   - model_name: claude-haiku-4-5
     litellm_params:
       model: groq/openai/gpt-oss-20b
+      api_key: os.environ/GROQ_API_KEY
+
+  # === All available Groq models ===
+
+  # OpenAI OSS
+  - model_name: gpt-oss-120b
+    litellm_params:
+      model: groq/openai/gpt-oss-120b
+      api_key: os.environ/GROQ_API_KEY
+
+  - model_name: gpt-oss-20b
+    litellm_params:
+      model: groq/openai/gpt-oss-20b
+      api_key: os.environ/GROQ_API_KEY
+
+  - model_name: gpt-oss-safeguard-20b
+    litellm_params:
+      model: groq/openai/gpt-oss-safeguard-20b
+      api_key: os.environ/GROQ_API_KEY
+
+  # Meta Llama
+  - model_name: llama-3.1-8b-instant
+    litellm_params:
+      model: groq/llama-3.1-8b-instant
+      api_key: os.environ/GROQ_API_KEY
+
+  - model_name: llama-3.3-70b-versatile
+    litellm_params:
+      model: groq/llama-3.3-70b-versatile
+      api_key: os.environ/GROQ_API_KEY
+
+  - model_name: llama-4-maverick
+    litellm_params:
+      model: groq/meta-llama/llama-4-maverick-17b-128e-instruct
+      api_key: os.environ/GROQ_API_KEY
+
+  - model_name: llama-4-scout
+    litellm_params:
+      model: groq/meta-llama/llama-4-scout-17b-16e-instruct
+      api_key: os.environ/GROQ_API_KEY
+
+  # Moonshot Kimi
+  - model_name: kimi-k2
+    litellm_params:
+      model: groq/moonshotai/kimi-k2-instruct
+      api_key: os.environ/GROQ_API_KEY
+
+  - model_name: kimi-k2-0905
+    litellm_params:
+      model: groq/moonshotai/kimi-k2-instruct-0905
+      api_key: os.environ/GROQ_API_KEY
+
+  # Qwen
+  - model_name: qwen3-32b
+    litellm_params:
+      model: groq/qwen/qwen3-32b
+      api_key: os.environ/GROQ_API_KEY
+
+  # Groq Compound
+  - model_name: groq-compound
+    litellm_params:
+      model: groq/groq/compound
+      api_key: os.environ/GROQ_API_KEY
+
+  - model_name: groq-compound-mini
+    litellm_params:
+      model: groq/groq/compound-mini
+      api_key: os.environ/GROQ_API_KEY
+
+  # Allam
+  - model_name: allam-2-7b
+    litellm_params:
+      model: groq/allam-2-7b
       api_key: os.environ/GROQ_API_KEY
 
 litellm_settings:
